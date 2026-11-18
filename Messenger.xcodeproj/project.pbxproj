@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110001 /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210001 /* MessengerApp.swift */; };
+		110002 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210002 /* Models.swift */; };
+		110003 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210003 /* ChatViewModel.swift */; };
+		110004 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210004 /* Components.swift */; };
+		110005 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210005 /* MessageBubbleView.swift */; };
+		110006 /* StoriesReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210006 /* StoriesReelView.swift */; };
+		110007 /* ChatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210007 /* ChatsListView.swift */; };
+		110008 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210008 /* ChatDetailView.swift */; };
+		110009 /* NewChatModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210009 /* NewChatModalView.swift */; };
+		110010 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210010 /* SettingsView.swift */; };
+		110011 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210011 /* MainTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010001 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210001 /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
+		210002 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		210003 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		210004 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		210005 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		210006 /* StoriesReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesReelView.swift; sourceTree = "<group>"; };
+		210007 /* ChatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsListView.swift; sourceTree = "<group>"; };
+		210008 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		210009 /* NewChatModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatModalView.swift; sourceTree = "<group>"; };
+		210010 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		210011 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		210012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		310001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		410001 = {
+			isa = PBXGroup;
+			children = (
+				410002 /* Messenger */,
+				410003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		410002 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				410004 /* App */,
+				410005 /* Models */,
+				410006 /* ViewModels */,
+				410007 /* Components */,
+				410008 /* Views */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		410003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				010001 /* Messenger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		410004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				210001 /* MessengerApp.swift */,
+				210012 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		410005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				210002 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		410006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				210003 /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		410007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				210004 /* Components.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		410008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				210005 /* MessageBubbleView.swift */,
+				210006 /* StoriesReelView.swift */,
+				210007 /* ChatsListView.swift */,
+				210008 /* ChatDetailView.swift */,
+				210009 /* NewChatModalView.swift */,
+				210010 /* SettingsView.swift */,
+				210011 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		510001 /* Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610001 /* Build configuration list for PBXNativeTarget "Messenger" */;
+			buildPhases = (
+				710001 /* Sources */,
+				310001 /* Frameworks */,
+				810001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Messenger;
+			productName = Messenger;
+			productReference = 010001 /* Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		910001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					510001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 610002 /* Build configuration list for PBXProject "Messenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 410001;
+			productRefGroup = 410003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				510001 /* Messenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		810001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		710001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110001 /* MessengerApp.swift in Sources */,
+				110002 /* Models.swift in Sources */,
+				110003 /* ChatViewModel.swift in Sources */,
+				110004 /* Components.swift in Sources */,
+				110005 /* MessageBubbleView.swift in Sources */,
+				110006 /* StoriesReelView.swift in Sources */,
+				110007 /* ChatsListView.swift in Sources */,
+				110008 /* ChatDetailView.swift in Sources */,
+				110009 /* NewChatModalView.swift in Sources */,
+				110010 /* SettingsView.swift in Sources */,
+				110011 /* MainTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B10001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Messenger/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.messenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B10002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Messenger/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.messenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		610001 /* Build configuration list for PBXNativeTarget "Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10001 /* Debug */,
+				B10002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		610002 /* Build configuration list for PBXProject "Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10001 /* Debug */,
+				A10002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 910001 /* Project object */;
+}
