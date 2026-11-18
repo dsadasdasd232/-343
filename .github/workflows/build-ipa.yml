@@ -1,0 +1,46 @@
+name: Build iOS IPA for Sideloadly
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Select latest Xcode
+      run: |
+        sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+        xcodebuild -version
+
+    - name: Build and Archive
+      run: |
+        xcodebuild -project Messenger.xcodeproj \
+          -scheme Messenger \
+          -destination 'generic/platform=iOS' \
+          -configuration Release \
+          -archivePath build/Messenger.xcarchive \
+          CODE_SIGNING_ALLOWED=NO \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGN_IDENTITY="" \
+          archive
+
+    - name: Package into Sideloadly-ready IPA
+      run: |
+        mkdir -p build/Payload
+        cp -r build/Messenger.xcarchive/Products/Applications/Messenger.app build/Payload/
+        cd build
+        zip -r -y Messenger.ipa Payload
+        ls -lh Messenger.ipa
+
+    - name: Upload IPA Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Sideloadly-Messenger-IPA
+        path: build/Messenger.ipa
+        retention-days: 14
